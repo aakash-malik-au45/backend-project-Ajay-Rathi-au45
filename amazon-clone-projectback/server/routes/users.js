@@ -6,6 +6,9 @@ const auth = require("../middleware/auth");
 const validateObjectId = require("../middleware/validObjectId");
 const path = require("path");
 let pat = path.join(__dirname, "../");
+const express = require("express");
+const app = express();
+app.use(express.static("public"));
 
 const sigNUP = (req, res) => {
     res.sendFile(`${pat}public/newuser.html`)
@@ -35,6 +38,7 @@ router.post("/signup", async(req, res) => {
     newUser.password = undefined;
     newUser.__v = undefined;
     res.status(200).sendFile(`${pat}public/login.html`)
+        ////res.status(200).send({ data: newUser, message: "Account created successfully" });
 
 });
 // get all users
