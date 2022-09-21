@@ -56,6 +56,6 @@ I'm a full stack developer and project in working phase wait until we can upload
 📫 How to reach me Github -[ajay-rathi-au45]
 
 ## 🔗 diploy Links
-[![heroko](https://primevideo7.herokuapp.com/)
+[heroko](https://primevideo7.herokuapp.com/)
 
 
